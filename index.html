@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript Basics Recap</title>
+    <!--
+        Import stylesheet file.
+        "rel"
+            This file should be loaded as a file containing css styles.
+        "href"
+            Path to the stylesheet file. For example `assets/style.css`, if the
+            `style.css` file was located in a `assets` folder.
+    -->
+    <link rel="stylesheet" href="style.css">
+    <!--
+        Import javascript file.
+        "src"
+            Path to the javascript file. For example `assets/script.js`, if the
+            `script.js` file was located in a `assets` folder.
+        "defer"
+            Mark this script import as deferred to after the page is loaded.
+            If the script is imported before page load, it won't be possible to
+            find any elements from the page in the javascript code.
+    -->
+    <script src="script.js" defer></script>
+    <script src="assets/variables.js" defer></script>
+    <script src="assets/selections.js" defer></script>
+    <script src="assets/events.js" defer></script>
+</head>
+<body>
+    <!--
+        HTML structure of the page.
+    -->
+    <div class="centered">
+        <img
+            class="logo"
+            src="img/zealand_logo.png"
+            alt="Zealand Logo"
+        >
+        <div
+            id="textElement"
+            class="title"
+        >
+            I should be changed in javascript
+        </div>
+    </div>
+    <!-- Used by the selection javascript examples -->
+    <div class="selectionTest">
+        <h2>See assets/selections.js</h2>
+        <div class="grid">
+            <div class="cell" id="firstCell">
+                1x1
+            </div>
+            <div class="cell even">
+                1x2
+            </div>
+            <div class="cell">
+                1x3
+            </div>
+            <div class="cell even">
+                2x1
+            </div>
+            <div class="cell" id="middleCell">
+                2x2
+            </div>
+            <div class="cell even">
+                2x3
+            </div>
+            <div class="cell">
+                3x1
+            </div>
+            <div class="cell even">
+                3x2
+            </div>
+            <div class="cell">
+                3x3
+            </div>
+        </div>
+    </div>
+    <!-- Used by the events javascript examples -->
+    <div class="eventTest">
+        <h2>See assets/events.js</h2>
+        <div class="grid">
+            <div class="button" id="firstButton">
+                1
+            </div>
+            <a
+                href="https://google.com"
+                target="_blank"
+                class="button"
+                id="secondButton"
+            >
+                2
+            </a>
+            <div class="button" id="thirdButton">
+                3
+            </div>
+            <div class="button animated" id="fourthButton">
+                4
+            </div>
+            <div class="button" id="fifthButton">
+                5
+            </div>
+        </div>
+    </div>
+</body>
+</html>

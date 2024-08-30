@@ -1,0 +1,88 @@
+/*
+ * Basic styling
+ */
+html {
+  background-color: #faee84;
+  font-family: sans-serif;
+}
+.centered {
+  text-align: center;
+}
+.logo {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  width: 30%;
+}
+.title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/*
+ * See assets/selections.js
+ */
+.selectionTest {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.selectionTest h2 {
+  font-size: 1rem;
+}
+.selectionTest .grid {
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+.selectionTest .cell {
+  align-items: center;
+  background-color: #000000;
+  color: #faee84;
+  display: flex;
+  justify-content: center;
+}
+
+/*
+ * See assets/events.js
+ */
+.eventTest {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.eventTest h2 {
+  font-size: 1rem;
+}
+.eventTest .grid {
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 50px;
+}
+.eventTest .button {
+  align-items: center;
+  background-color: #000000;
+  color: #faee84;
+  display: flex;
+  justify-content: center;
+}
+.eventTest a.button {
+  border-bottom: 5px solid #84a5fa;
+}
+.eventTest .button.animated:hover {
+  animation-duration: 2s;
+  animation-name: flashy;
+}
+@keyframes flashy {
+  25%,
+  75% {
+    scale: 100%;
+  }
+  50% {
+    scale: 200%;
+    background-color: #84a5fa;
+  }
+}
